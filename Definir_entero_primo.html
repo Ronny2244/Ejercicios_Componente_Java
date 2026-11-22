@@ -1,0 +1,24 @@
+<script> 
+// Inicio del algortimo
+let numero=0, contador=2, primo=1; // Definir Variables
+
+numero = prompt("Ingrese el numero entero a definir");
+
+while (contador < numero && primo != 0)
+{ // Inicio del mientras
+    primo = numero % contador;
+    contador++; 
+} // Fin del mientras 
+
+if (primo == 0)
+{ // verdadero
+    document.write("El numero " + numero + " no es primo.");
+}
+else
+{ // falso
+
+    document.write("El numero " + numero + " es primo");
+}
+
+// Fin del algoritmo
+</script> 

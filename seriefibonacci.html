@@ -1,13 +1,16 @@
 <script>
 // Inicio del algoritmo 
 // Algoritmo para calcular la serie de Fibonacci
-let serie=0, numero1=1, numero2=0, contador=0;
-while (contador <= 100) 
+let serie=0, numero1=1, numero2=0, contador=1;
+let enteros_deseados = prompt ("Ingrese la cantidad de numeros deseados a mostrar")
+while (contador <= enteros_deseados) 
 
 { // Inicio del mientras
     
     serie = numero1 + numero2;
     console.log(serie);
+    document.write(serie);
+    document.write("<br>");
     // Cambio de variables
     numero1 = numero2;
     numero2 = serie;

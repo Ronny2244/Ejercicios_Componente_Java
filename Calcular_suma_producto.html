@@ -1,0 +1,26 @@
+<script> 
+// Inicio del algortimo
+let num_generar=0, contador=1, numpar=2, numimpar=1, sumpar=0, productoimpar=1;
+num_generar = prompt ("Ingrese la cantidad de numeros que desea generar");
+
+while (contador <= num_generar)
+{ // Inicio del mientras
+    sumpar = numpar + sumpar
+    productoimpar = numimpar * productoimpar
+    
+    numpar = numpar + 2
+    numimpar = numimpar + 2
+
+    contador++; 
+
+} //Fin del while
+
+document.write("La suma de los numeros pares es: " + sumpar);
+
+document.write("<br>");
+
+document.write("La multilplicacion de los numeros impares es: " + productoimpar);
+
+
+// Fin del algoritmo
+</script>
