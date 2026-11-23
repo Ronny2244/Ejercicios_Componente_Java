@@ -1,0 +1,31 @@
+<script>
+// Inicio del algoritmo
+let fibonacci=0, num1=1, num2=0, contador=1, divisor= 2, primo=1, numerosprimos=0;
+while (contador <= 10)
+{ // Empieza WHILE
+    //Proceso Fibonacci
+    fibonacci = num1 + num2;
+    document.write (fibonacci)
+    document.write ("<br>")
+    num1 = num2;
+    num2 = fibonacci;
+    // Incremento
+    contador++;
+    divisor = 2
+    primo = 1
+    //Definir si es primo o no
+    while (divisor < fibonacci && primo != 0 )
+    {
+        primo = fibonacci % divisor; 
+        divisor++
+        
+    }
+
+   if (fibonacci > 1 && primo != 0)
+{ 
+    numerosprimos++
+}
+} // Fin WHILE
+
+document.write ("La cantidad de números primos es: " + numerosprimos);
+</script>

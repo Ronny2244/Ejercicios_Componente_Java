@@ -1,0 +1,52 @@
+
+<script>
+// Inicio del algoritmo
+let fibonacci=0, num1=1, num2=0, contador=1;
+let divisor=2, primo=1, sumafibo=0, promfibo=0;
+let numerosprimos=0;
+
+// Calcular Fibonacci
+while (contador <= 10)
+{
+    fibonacci = num1 + num2;
+    num1 = num2;
+    num2 = fibonacci;
+
+    document.write(fibonacci);
+    document.write("<br>");
+
+    // Reiniciar variables
+    divisor = 2;
+    primo = 1;
+
+    // Identificar primos
+    while (divisor < fibonacci && primo != 0)
+    {
+        primo = fibonacci % divisor;
+        divisor++;
+    }
+
+    // Sumar y contar solamente los primos
+    if (fibonacci > 1 && primo != 0)
+    {
+        numerosprimos++;
+        sumafibo = sumafibo + fibonacci;
+    }
+
+    // Incremento
+    contador++;
+}
+
+// Calcular promedio de los primos
+promfibo = sumafibo / numerosprimos;
+
+// Mostrar resultados
+document.write("<br>");
+document.write("La cantidad de números primos es: " + numerosprimos);
+document.write("<br>");
+document.write("La suma de los números primos es: " + sumafibo);
+document.write("<br>");
+document.write("El promedio de los números primos es: " + promfibo);
+
+// Fin del algoritmo
+</script>
