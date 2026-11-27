@@ -1,0 +1,19 @@
+<script>
+// Inicio del algoritmo
+let nombre_vendedor="", sueldo_basico=0, venta1=0, venta2=0, venta3=0, comision=0, total_ventas=0, sueldo_total=0; 
+nombre_vendedor = prompt ("Ingrese el nombre del vendedor");
+sueldo_basico = Number(prompt("Ingrese el sueldo basico"));
+venta1 = Number (prompt ("Ingrese el valor de la venta realizada"));
+venta2 = Number (prompt ("Ingrese el valor de la venta realizada"));
+venta3 = Number (prompt ("Ingrese el valor de la venta realizada"));
+
+total_ventas = venta1 + venta2 + venta3;
+comision = total_ventas * 0.10;
+sueldo_total = sueldo_basico + comision;
+
+document.write("El nombre del vendedor es: " + nombre_vendedor);
+document.write("<br>");
+document.write("El total de comisiones es: " + comision);
+document.write("<br>");
+document.write("El sueldo total a recibir es: " + sueldo_total)
+</script>
