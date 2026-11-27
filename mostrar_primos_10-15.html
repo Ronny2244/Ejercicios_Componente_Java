@@ -1,23 +1,50 @@
-<script> 
+<script>
 // Inicio del algoritmo
-    let divisor=2, primo=1, contador=0; // Variables
+let numero = 2;
+let divisor = 2;
+let primo = true;
+let contadorPrimos = 0;
 
-    While(contador <= 10) 
-    { // Inicio del While
-        primo = contador % divisor
-        divisor++;
-        contador++;
-    } // Fin del while
+let cantidad1a10 = 0;
+let cantidad15a25 = 0;
 
-if  (primo == 0 )
-{ // Inicio del condicional SI
-    document.write(prompt "El numero es primo"" + primo);
-}
-else
+document.write("Los 10 primeros números primos: ");
+
+while (contadorPrimos < 10)
 {
-    document.write(prompt "El numero no es primo" + primo);
+    divisor = 2;
+    primo = true;
+
+    while (divisor < numero && primo == true)
+    {
+        if (numero % divisor == 0)
+        {
+            primo = false;
+        }
+        divisor++;
+    }
+
+    if (primo == true)
+    {
+        document.write(numero + ", ");
+        contadorPrimos++;
+
+        if (numero >= 1 && numero <= 10)
+        {
+            cantidad1a10++;
+        }
+
+        if (numero >= 15 && numero <= 25)
+        {
+            cantidad15a25++;
+        }
+    }
+
+    numero++;
 }
 
+document.write("<br>Primos entre 1 y 10: " + cantidad1a10);
+document.write("<br>Primos entre 15 y 25: " + cantidad15a25);
 
 // Fin del algoritmo
 </script>
