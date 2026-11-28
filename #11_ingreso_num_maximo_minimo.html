@@ -1,0 +1,42 @@
+<script> // Inicio del algoritmo
+let entrada=0, maximo=0, minimo=0, numero=0, contador=0 ;
+entrada = prompt ("Ingrese el valor numerico o s para salir: ");
+
+while (entrada != "s")
+{ //Inicio while
+    numero = Number(entrada);
+    if (contador ==0)
+    {
+        maximo=numero;
+        minimo=numero;
+    }
+    else
+    {
+        if (numero > maximo)
+        {
+            maximo = numero;
+        }
+        if (numero < minimo)
+        {
+            minimo = numero;
+        }
+    }
+    contador++;
+    entrada = prompt ("Ingrese otro valor o ingrese s para salir: ");
+
+} //Fin while
+
+// Mostrar resultados 
+if (contador > 0)
+{
+    document.write ("El numero maximo es: "+maximo);
+    document.write ("<br>");
+    document.write ("El numero minimo es: "+minimo);
+}
+else 
+{
+    document.write ("No se ingresaron valores numericos");
+}
+
+// Fin del algoritmo 
+</script>

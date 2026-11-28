@@ -1,0 +1,33 @@
+<script> // Inicio del algoritmo 
+let numa=0, numb=0, sumasucesiva=0, potencia=1, contador=0; // Definir variables 
+
+// Ingreso por teclado
+numa = Number (prompt ("Ingrese el numero A"));
+numb = Number (prompt ("Ingrese el numero B"));
+
+// Definir Producto 
+while (contador < numb)
+{ //Inicio while
+    sumasucesiva= sumasucesiva + numa;
+    contador++;
+} //fin while
+  
+// Reiniciar contador
+contador = 0
+// Definir Potencia
+
+while (contador < numb)
+{ //Inicio while
+    potencia= potencia * numa
+    contador++;
+} //fin while
+
+
+
+// Presentar Salida
+document.write ("El producto del numero a y b es: " + sumasucesiva);
+document.write ("<br>")
+document.write ("La potencia entre el numero a y b es: " + potencia);
+
+// Fin del algoritmo 
+</script>
